@@ -1,13 +1,11 @@
-//your JS code here. If required.
-cosnt target = document.getElementById('level')
+const target = document.getElementById("level");
 
-let level = 0
-let target = level
+let level = 0;
+let current = target;
 
-while(level){
-	level++
-	current = current.parentElement
+while (current) {
+  level++;
+  current = current.parentElement;
 }
 
-alert("The level of the DOM: " + level)
-
+alert("The level of the element is: " + level);
